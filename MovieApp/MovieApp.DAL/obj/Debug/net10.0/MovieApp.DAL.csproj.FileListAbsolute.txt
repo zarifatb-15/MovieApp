@@ -1,0 +1,15 @@
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/bin/Debug/net10.0/MovieApp.DAL.deps.json
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/bin/Debug/net10.0/MovieApp.DAL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/bin/Debug/net10.0/MovieApp.DAL.pdb
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.csproj.AssemblyReference.cache
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.AssemblyInfoInputs.cache
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.AssemblyInfo.cs
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.csproj.CoreCompileInputs.cache
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.sourcelink.json
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/refint/MovieApp.DAL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.pdb
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/ref/MovieApp.DAL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/bin/Debug/net10.0/MovieApp.DAL.runtimeconfig.json
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.DAL/obj/Debug/net10.0/MovieApp.DAL.genruntimeconfig.cache

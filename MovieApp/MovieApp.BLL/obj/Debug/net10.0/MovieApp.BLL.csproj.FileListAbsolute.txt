@@ -1,0 +1,16 @@
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/bin/Debug/net10.0/MovieApp.BLL.deps.json
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/bin/Debug/net10.0/MovieApp.BLL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/bin/Debug/net10.0/MovieApp.BLL.pdb
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/bin/Debug/net10.0/MovieApp.DAL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/bin/Debug/net10.0/MovieApp.DAL.pdb
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.csproj.AssemblyReference.cache
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.AssemblyInfoInputs.cache
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.AssemblyInfo.cs
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.csproj.CoreCompileInputs.cache
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.sourcelink.json
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.B789808D.Up2Date
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/refint/MovieApp.BLL.dll
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/MovieApp.BLL.pdb
+/Users/zarifababayeva/Desktop/MovieApp/MovieApp/MovieApp.BLL/obj/Debug/net10.0/ref/MovieApp.BLL.dll
