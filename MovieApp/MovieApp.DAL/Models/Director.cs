@@ -11,4 +11,6 @@ public class Director: BaseEntity
     public string? City { get; set;  }
     
     public int Age { get; set;  }
+    
+    public string? Region { get; set;  }
 }

@@ -5,7 +5,7 @@ namespace MovieApp.DAL.Data;
 
 public class MovieAppDbContext: DbContext
 {
-     public DbSet<Director>Directors { get; set; }
+     public DbSet<Director> Directors { get; set; }
     
      // public MovieAppDbContext(DbContextOptions <MovieAppDbContext> options) : base(options)
      // {

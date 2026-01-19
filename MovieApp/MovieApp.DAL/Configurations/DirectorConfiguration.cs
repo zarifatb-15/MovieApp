@@ -27,6 +27,10 @@ public class DirectorConfiguration:IEntityTypeConfiguration<Director>
             
             builder.Property(d => d.Age)
                 .IsRequired();
+            
+            builder.Property(d=> d.Region)
+                .IsRequired(false);
+               
 
             // Seed Data
             builder.HasData
