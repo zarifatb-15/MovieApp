@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MovieApp.DAL.Data;
 
@@ -11,9 +12,11 @@ using MovieApp.DAL.Data;
 namespace MovieApp.DAL.Data.Migrations
 {
     [DbContext(typeof(MovieAppDbContext))]
-    partial class MovieAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260120212121_mig_3")]
+    partial class mig_3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -110,9 +113,6 @@ namespace MovieApp.DAL.Data.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<int>("DirectorId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Duration")
                         .HasColumnType("int");
 
@@ -129,87 +129,7 @@ namespace MovieApp.DAL.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DirectorId");
-
                     b.ToTable("Movies", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "A mind-bending thriller about dream invasion.",
-                            DirectorId = 1,
-                            Duration = 148,
-                            Imdb = 8.8m,
-                            ReleaseYear = new DateTime(2010, 7, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Inception"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Batman faces the Joker in Gotham City.",
-                            DirectorId = 1,
-                            Duration = 152,
-                            Imdb = 9.0m,
-                            ReleaseYear = new DateTime(2008, 7, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "The Dark Knight"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Interwoven stories of crime in Los Angeles.",
-                            DirectorId = 2,
-                            Duration = 154,
-                            Imdb = 8.9m,
-                            ReleaseYear = new DateTime(1994, 10, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Pulp Fiction"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Description = "A bride seeks revenge on her former lover.",
-                            DirectorId = 2,
-                            Duration = 111,
-                            Imdb = 8.1m,
-                            ReleaseYear = new DateTime(2003, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Kill Bill: Vol. 1"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Description = "The life journey of a simple man with a big heart.",
-                            DirectorId = 3,
-                            Duration = 142,
-                            Imdb = 8.8m,
-                            ReleaseYear = new DateTime(1994, 7, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Forrest Gump"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Description = "A WWII mission to save a paratrooper behind enemy lines.",
-                            DirectorId = 4,
-                            Duration = 169,
-                            Imdb = 8.6m,
-                            ReleaseYear = new DateTime(1998, 7, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Saving Private Ryan"
-                        });
-                });
-
-            modelBuilder.Entity("MovieApp.DAL.Models.Movie", b =>
-                {
-                    b.HasOne("MovieApp.DAL.Models.Director", "Director")
-                        .WithMany("Movies")
-                        .HasForeignKey("DirectorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Director");
-                });
-
-            modelBuilder.Entity("MovieApp.DAL.Models.Director", b =>
-                {
-                    b.Navigation("Movies");
                 });
 #pragma warning restore 612, 618
         }
