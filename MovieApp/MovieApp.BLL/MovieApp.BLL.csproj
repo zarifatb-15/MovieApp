@@ -10,4 +10,8 @@
       <ProjectReference Include="..\MovieApp.DAL\MovieApp.DAL.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Interfaces\" />
+    </ItemGroup>
+
 </Project>
