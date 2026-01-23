@@ -5,15 +5,16 @@ namespace MovieApp.DAL.Data;
 
 public class MovieAppDbContext: DbContext
 {
+ 
      public DbSet<Director> Directors { get; set; }
      
      public DbSet<Movie> Movies { get; set; }
     
-     // public MovieAppDbContext(DbContextOptions <MovieAppDbContext> options) : base(options)
-     // {
-     //
-     // }
-     //
+     public MovieAppDbContext(DbContextOptions <MovieAppDbContext> options) : base(options)
+     {
+     
+     }
+     
      
      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
      {

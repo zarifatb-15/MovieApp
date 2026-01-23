@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MovieApp.BLL.Dtos.DirectorDtos;
 using MovieApp.DAL.Data;
 using MovieApp.DAL.Models;
 
@@ -28,7 +29,7 @@ public class DirectorService(MovieAppDbContext context)
         if (string.IsNullOrWhiteSpace(value))
             throw new Exception();
         return context.Directors
-            .Where(d=>d.Name.Contains(value, StringComparison.OrdinalIgnoreCase))
+            .Where(d=>d.Name.Contains(value))
             .ToList();
     }
     
@@ -37,20 +38,29 @@ public class DirectorService(MovieAppDbContext context)
         if (string.IsNullOrWhiteSpace(value))
             throw new Exception();
         return await context.Directors
-            .Where(d=>d.Name.Contains(value, StringComparison.OrdinalIgnoreCase))
+            .Where(d=>d.Name.Contains(value))
             .ToListAsync();
         
     }
 
-    public void Add(Director director)
+    public void AddDirector(DirectorCreateDto directorCreateDto)
     {
-        if(context.Directors.Any(d=>d.Name.Equals(director.Name, StringComparison.OrdinalIgnoreCase)))
+        if(context.Directors.Any(d=>d.Name.Equals(directorCreateDto.Name)))
             throw new Exception("Director already exists");
+        var director = new Director
+        {
+            Name = directorCreateDto.Name,
+            Description = directorCreateDto.Description,
+            Adress = directorCreateDto.Adress,
+            City = directorCreateDto.City,
+            Age = directorCreateDto.Age,
+            Region = directorCreateDto.Region
+        };
         context.Directors.Add(director);
         context.SaveChanges();
     }
     
-    public async Task AddAsync(Director director)
+    public async Task AddDirectorAsync(Director director)
     {
         if( await context.Directors.AnyAsync(d=>d.Name.Equals(director.Name, StringComparison.OrdinalIgnoreCase)))
             throw new Exception("Director already exists");
