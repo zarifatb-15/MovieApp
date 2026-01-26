@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MovieApp.BLL.Dtos.DirectorDtos;
+using MovieApp.BLL.Profiles;
 using MovieApp.BLL.Services;
 using MovieApp.DAL.Data;
 using MovieApp.DAL.Models;
@@ -27,15 +28,19 @@ class Program
         // var directors = directorService.GetAllDirectorsSearch("a");
         // foreach (var item in directors)
         //     Console.WriteLine(item.Name);
-        var newDirector = new DirectorCreateDto
+        // var newDirector = new DirectorCreateDto
+        // {
+        //     Name = "director x",
+        //     Description = "British-American film director, producer, and screenwriter.",
+        //     Adress = "Los Angeles, CA",
+        //     City = "Los Angeles",
+        //     Age = 50,
+        //     Region = "California"
+        // };
+        // directorService.AddDirector(newDirector);
+        serviceCollection.AddAutoMapper(options =>
         {
-            Name = "director x",
-            Description = "British-American film director, producer, and screenwriter.",
-            Adress = "Los Angeles, CA",
-            City = "Los Angeles",
-            Age = 50,
-            Region = "California"
-        };
-        directorService.AddDirector(newDirector);
+            options.AddProfile<MapperProfile>();
+        });
     }
 }
